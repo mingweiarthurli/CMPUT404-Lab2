@@ -1,0 +1,19 @@
+Q1:
+Firstly, create socket with "s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)".
+Then connect the socket with specified remote ip and port by "s.connect((remote_ip, port))"
+
+Q2:
+For a client socket, we create socket and connect to a remote ip and port.
+However, for a server socket, we create socket and bind it with a host address and port.
+
+Q3:
+We set socket option with "socket.SO_REUSEADDR".
+
+Q4:
+We get the ip address and port of the incomming connection.
+
+Q5:
+The recv() returns "b'Foobar\n'" which is a bytes data type "Foobar" text followed by a new line.
+
+Q6:
+https://github.com/mingweiarthurli/CMPUT404-Lab2
