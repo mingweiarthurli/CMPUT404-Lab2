@@ -18,7 +18,7 @@ def get_remote_ip(host):
         print('Hostname could not be resolved. Exiting')
         sys.exit()
 
-    print('Ip address of ' + host + 'is' + remote_ip)
+    print('Ip address of ' + host + ' is ' + remote_ip)
     return remote_ip
 
 def send_data(serversocket, payload):
@@ -42,7 +42,7 @@ def main():
         remote_ip = get_remote_ip(host)
 
         s.connect((remote_ip, port))
-        print('Socket Connected to ' + host + ' on IP' + remote_ip)
+        print('Socket Connected to ' + host + ' on IP ' + remote_ip)
 
         send_data(s, payload)
         s.shutdown(socket.SHUT_WR)
